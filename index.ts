@@ -1,6 +1,18 @@
-// Import stylesheets
-import './style.css';
+import Stack from './02 - stacks';
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+const stack = new Stack<number>();
+// console.log(stack.isEmpty());
+
+stack.push(5);
+stack.push(8);
+
+// console.log(stack.peek());
+
+stack.push(11);
+console.log(stack.size());
+// console.log(stack.isEmpty());
+
+// stack.push(15);
+// stack.pop();
+// stack.pop();
+// console.log(stack.size());
