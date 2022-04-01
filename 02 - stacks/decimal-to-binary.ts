@@ -1,6 +1,6 @@
 import Stack, { IStack } from '.';
 
-const decimalToBinary = (decNumber: number) => {
+export default function decimalToBinary(decNumber: number) {
   let remStack: IStack<number> = new Stack();
   let number = decNumber;
   let rem;
@@ -16,4 +16,4 @@ const decimalToBinary = (decNumber: number) => {
   }
 
   return binaryString;
-};
+}
